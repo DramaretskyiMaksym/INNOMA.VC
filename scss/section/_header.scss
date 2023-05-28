@@ -1,5 +1,5 @@
 .background{
-  background-image:url('../../images/bakgr_banner.png');
+  background-image:url('../images/bakgr_banner.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -89,7 +89,7 @@
     height: 2px;
     left: 12px;
     background-color: #07AF91;
-    transition: transform .7s, opacity .8s;
+    transition: transform .3s, opacity .3s;
     &:nth-child(1) {
       background-color:#07AF91;
       width: 18px;
@@ -129,7 +129,7 @@
   left: 12px;
 }
 .header.open .header__burger-btn span:nth-child(2) {
-  opacity: 0 ;
+  opacity: 0;
 }
 .header.open .header__burger-btn span:nth-child(3) {
   transform: translateY(0) rotate(-45deg);
@@ -138,7 +138,7 @@
   left: 12px;
 }
 .header.open .header__burger-btn span:nth-child(4) {
-  opacity: 0 ;
+  opacity: 0;
 }
 
 body.lock {

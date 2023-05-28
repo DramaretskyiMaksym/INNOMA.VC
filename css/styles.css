@@ -371,7 +371,7 @@ body.lock {
   font-display: swap;
 }
 .background {
-  background-image: url("../../images/bakgr_banner.png");
+  background-image: url("../images/bakgr_banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -464,7 +464,7 @@ body.lock {
   height: 2px;
   left: 12px;
   background-color: #07AF91;
-  transition: transform 0.7s, opacity 0.8s;
+  transition: transform 0.3s, opacity 0.3s;
 }
 .header__burger-btn span:nth-child(1) {
   background-color: #07AF91;
