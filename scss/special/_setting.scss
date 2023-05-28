@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+// учитывать границы и отступы в значениях которое мы указываем для высоты и ширины 
+
+body {
+  font-family: 'Montserrat','Inter', sans-serif;
+  font-style: normal;
+  min-width: 360px;
+  overflow: auto;
+  background-color: #ffffff;
+  a {
+  text-decoration: none;
+  }
+}
+body.lock {
+  overflow: hidden;
+} 
+
