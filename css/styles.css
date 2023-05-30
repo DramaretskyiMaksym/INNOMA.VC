@@ -328,6 +328,14 @@ body.lock {
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
@@ -376,7 +384,7 @@ body.lock {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
-  height: 100vh;
+  height: 720px;
   opacity: 0.6;
 }
 .background::before {
@@ -384,10 +392,10 @@ body.lock {
   content: "";
   top: 0px;
   left: 0px;
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  height: 720px;
   z-index: -1;
-  background: rgba(0, 0, 0, 0.59);
+  background: rgba(0, 0, 0, 0.62);
 }
 
 .logo {
@@ -436,6 +444,7 @@ body.lock {
 }
 
 .come {
+  cursor: pointer;
   font-weight: 500;
   font-size: 14px;
   line-height: 10px;
@@ -538,13 +547,6 @@ body.lock {
     justify-content: space-between;
     align-items: center;
   }
-  .wrapper {
-    max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .header__burger-btn {
     display: block;
     margin-left: auto;
@@ -593,15 +595,14 @@ body.lock {
   }
 }
 @media (min-width: 768px) {
+  .background {
+    height: 900px;
+  }
+  .background::before {
+    height: 900px;
+  }
   .header {
     padding-top: 16px;
-  }
-  .wrapper {
-    max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .container {
     display: flex;
@@ -617,6 +618,15 @@ body.lock {
   .menu__list {
     display: flex;
     gap: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__list {
+    gap: 60px;
+  }
+  .menu__link {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 .banner {
@@ -644,13 +654,16 @@ body.lock {
   display: flex;
   position: relative;
   color: white;
-  padding: 4px;
+  padding: 4px 6px;
   border-radius: 4px;
   z-index: 10;
   background-color: #07AF91;
 }
 
 .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 32px;
 }
 
@@ -661,6 +674,7 @@ body.lock {
   gap: 44px;
 }
 .apply button {
+  cursor: pointer;
   font-weight: 600;
   max-width: 236px;
   font-size: 16px;
@@ -681,7 +695,7 @@ body.lock {
   display: inline-block;
   font-weight: 400;
   font-size: 16px;
-  line-height: 31px;
+  line-height: 20px;
   text-align: center;
   color: #FFFFFF;
 }
@@ -698,4 +712,214 @@ body.lock {
   background-color: #FFFFFF;
   border-radius: 4px;
   margin-left: 6px;
+}
+
+@media (min-width: 768px) {
+  .date__change {
+    max-width: 420px;
+  }
+}
+@media (min-width: 1024px) {
+  .banner {
+    align-items: start;
+  }
+  .title {
+    align-items: start;
+    margin-bottom: 10px;
+  }
+  .title h1, .title h2, .title h3 {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 60px;
+  }
+  .apply {
+    align-items: start;
+  }
+  .apply h4 {
+    text-align: start;
+    font-size: 34px;
+    line-height: 38px;
+  }
+  .apply button {
+    font-size: 20px;
+    line-height: 22px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .date__change {
+    max-width: 650px;
+  }
+}
+.services__section {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+}
+.services__section h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: #1178B2;
+  margin-bottom: 40px;
+}
+
+.analytical__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.analytical__block img {
+  object-fit: contain;
+  width: 100%;
+  height: 220px;
+  margin-bottom: 20px;
+}
+.analytical__block button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #07AF91;
+  padding: 17px 100px;
+  border: none;
+  border-radius: 5px;
+  max-width: 326px;
+}
+
+.analytical {
+  max-width: 674px;
+}
+.analytical h3 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1178B2;
+  margin-bottom: 10px;
+}
+.analytical p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.accelerator__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accelerator__block img {
+  object-fit: contain;
+  width: 100%;
+  height: 220px;
+  margin-bottom: 20px;
+}
+.accelerator__block button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #07AF91;
+  padding: 17px 100px;
+  border: none;
+  border-radius: 5px;
+  max-width: 326px;
+}
+
+@media (min-width: 900px) {
+  .analytical__block {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 46px;
+    margin-bottom: 184px;
+  }
+  .accelerator__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 46px;
+  }
+}
+.whowe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.whowe h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1178B2;
+  margin-bottom: 30px;
+}
+
+.whowe__blocks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.whowe__block {
+  display: flex;
+  max-width: 354px;
+  cursor: pointer;
+  min-height: 262px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 35px 23px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+}
+.whowe__block img {
+  margin-bottom: 20px;
+}
+.whowe__block h3 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.whowe__block p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+.whowe__block:hover {
+  box-shadow: 0px 0px 60px rgb(7, 175, 145);
+}
+
+@media (min-width: 768px) {
+  .whowe__block h3 {
+    font-size: 20px;
+  }
+  .whowe__blocks {
+    gap: 20px;
+  }
+  .whowe__block:nth-child(3) {
+    max-width: 728px;
+  }
 }
