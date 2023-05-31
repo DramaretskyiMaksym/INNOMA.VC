@@ -68,3 +68,19 @@
     }
   }
 }
+@media (min-width:1124px){
+  .whowe{
+    h2{
+      margin-right: auto;
+    }
+  }
+  .whowe__blocks{
+    flex-wrap: nowrap;
+  }
+  .whowe__block{
+    max-width: 360px;
+    &:nth-child(3){
+      max-width: 360px;
+    }
+  }
+}
