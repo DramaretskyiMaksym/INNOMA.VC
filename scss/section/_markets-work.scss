@@ -1,5 +1,19 @@
 .section__markets-work{
   padding: 100px 0px;
+  position: relative;
+  &::before{
+    position: absolute;
+    top: 238px;
+    z-index: -1;
+    left: 0px;
+    content: "";
+    background-image: url("../../images/world.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 202px;
+    width: 100%;
+  }
 }
 .block__change-markets{
   display: flex;
@@ -43,13 +57,13 @@
     border-left: 1px solid #CFDDEB;
   }
 }
-.background__markets-work{
-  background-image: url("../../images/world.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 229px;
-}
+// .background__markets-work{
+//   background-image: url("../../images/world.svg");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   height: 229px;
+// }
 
 .block__markets{
   margin-bottom: 33px;
@@ -157,8 +171,10 @@
   }
 
   @media (min-width:768px){
-    .background__markets-work{
-      height: 408px;
+    .section__markets-work{
+      &::before{
+        height: 400px;
+      }
     }
     .block__change-markets{
       display: flex;

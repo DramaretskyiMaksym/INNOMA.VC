@@ -942,7 +942,7 @@ body.lock {
   display: flex;
   align-items: center;
   position: relative;
-  background-image: url("../../images/startup.png");
+  background-image: url("../images/startup.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1021,6 +1021,20 @@ body.lock {
 }
 .section__markets-work {
   padding: 100px 0px;
+  position: relative;
+}
+.section__markets-work::before {
+  position: absolute;
+  top: 238px;
+  z-index: -1;
+  left: 0px;
+  content: "";
+  background-image: url("../../images/world.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 202px;
+  width: 100%;
 }
 
 .block__change-markets {
@@ -1066,14 +1080,6 @@ body.lock {
 .block__checkbox :nth-child(3) {
   border-right: 1px solid #CFDDEB;
   border-left: 1px solid #CFDDEB;
-}
-
-.background__markets-work {
-  background-image: url("../../images/world.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 229px;
 }
 
 .block__markets {
@@ -1185,8 +1191,8 @@ body.lock {
 }
 
 @media (min-width: 768px) {
-  .background__markets-work {
-    height: 408px;
+  .section__markets-work::before {
+    height: 400px;
   }
   .block__change-markets {
     display: flex;
@@ -1301,5 +1307,263 @@ body.lock {
 @media (max-width: 1024px) {
   .btn__change-markets {
     display: none;
+  }
+}
+.about-accelerator {
+  padding: 0px 0px 100px;
+}
+.about-accelerator h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #1178B2;
+}
+.about-accelerator p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  font-weight: 300;
+}
+
+.about-accelerator-title {
+  margin-bottom: 20px;
+}
+.about-accelerator-title h2 {
+  margin-bottom: 10px;
+}
+
+.about-accelerator-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.accelerator-block {
+  max-width: 306px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  padding: 26px 95px 26px 30px;
+}
+.accelerator-block p {
+  font-family: "Inter";
+  max-width: 180px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #232323;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0px;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .about-accelerator-title p {
+    max-width: 630px;
+  }
+  .about-accelerator-blocks {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .accelerator-block {
+    justify-content: center;
+    flex-direction: column;
+    padding: 76px 46px;
+  }
+  .accelerator-block img {
+    height: 76px;
+  }
+  .accelerator-block p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.accelerator__program-block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0px;
+}
+.accelerator__program-block h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.module__blocks {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 18px 0px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+}
+.module__blocks span {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+.module__blocks span::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/Vector-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  top: 46px;
+  left: 50px;
+}
+.module__blocks h3 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #2A79C2;
+}
+.module__blocks p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.program__block-change {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.module__topic {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 20px;
+}
+.module__topic p {
+  display: flex;
+  background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: start;
+  color: #555555;
+  border-top: 1px solid #E9E9E9;
+  padding: 27px 37px 27px 15px;
+}
+.module__topic :last-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2A79C2;
+}
+
+.module__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.module__block-span {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 18px 0px;
+  min-height: 100px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+}
+.module__block-span:nth-child(-n+7) span {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.module__block-span:nth-child(-n+7) span::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/Vector-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  top: 70px;
+  left: 48%;
+  transform: rotate(180deg);
+}
+.module__block-span h3 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #2A79C2;
+}
+.module__block-span p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .accelerator__program-block h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .module__blocks h3 {
+    font-size: 16px;
+  }
+  .module__blocks p {
+    font-size: 16px;
+  }
+  .module__blocks span {
+    gap: 43px;
+  }
+  .module__blocks span::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 456px;
+  }
+  .program__block-change {
+    flex-direction: row;
+    gap: 43px;
+  }
+  .module__block-span:nth-child(-n+7) span::after {
+    top: 18px;
+    left: 94%;
+  }
+  .module__block-span .module__block-span {
+    min-height: 76px;
   }
 }

@@ -1,0 +1,179 @@
+.accelerator__program-block{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0px;
+  h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
+.module__blocks{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 18px 0px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  span {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    &::before{
+      position: absolute;
+      content: "";
+      background-image: url("../../images/Vector-arrow.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 24px;
+      height: 24px;
+      top: 46px;
+      left: 50px;
+    }
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2A79C2;
+  }
+  p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+
+
+
+
+.program__block-change{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+.module__topic{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 20px;
+  p {
+    display: flex;
+    background-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: start;
+    color: #555555;
+    border-top: 1px solid #E9E9E9;
+    padding: 27px 37px 27px 15px;
+  }
+  :last-child{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2A79C2;
+  }
+}
+.module__block{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.module__block-span{
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 18px 0px;
+  min-height: 100px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  &:nth-child(-n+7){
+    span {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      &::after{
+        position: absolute;
+        content: "";
+        background-image: url("../../images/Vector-arrow.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 24px;
+        height: 24px;
+        top: 70px;
+        left: 48%;
+        transform: rotate(180deg);
+      }
+    }
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2A79C2;
+  }
+  p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
+@media (min-width:768px){
+  .accelerator__program-block{
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+  .module__blocks{
+    h3{
+      font-size: 16px;
+    }
+    p{
+      font-size: 16px;
+    }
+    span {
+      gap: 43px;
+      &::before{
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 456px;
+      }
+    }
+  }
+  .program__block-change{
+    flex-direction: row;
+    gap: 43px;
+  }
+
+  .module__block-span{
+    &:nth-child(-n+7){
+      span {
+        &::after{
+          top: 18px;
+          left: 94%;
+        }
+      }
+    }
+  .module__block-span{
+    min-height: 76px;
+  }
+}
+}
