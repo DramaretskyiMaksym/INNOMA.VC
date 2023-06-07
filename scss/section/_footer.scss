@@ -1,0 +1,69 @@
+.block__footer{
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-image: url("../../images/bakgr_banner.jpg");
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  min-height: 97px;
+  opacity: 0.6;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 97px;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+}
+.footer__block{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0px;
+  gap: 70;
+  div{
+    display: flex;
+    flex-direction: column;
+  }
+    img{
+    z-index: 10;
+  }
+  p{
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+  }
+  a{
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+  }
+}
+@media(min-width:768px){
+  .footer__block{
+    gap: 120px;
+  }
+  p,a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+}
+@media(min-width:1440px){
+  .footer__block{
+    gap: 160px;
+  }
+  p,a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+}

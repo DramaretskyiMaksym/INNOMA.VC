@@ -17,6 +17,10 @@
   }
 }
 .about-accelerator-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
   margin-bottom: 20px;
   h2{
     margin-bottom: 10px;

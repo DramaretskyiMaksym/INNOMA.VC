@@ -1,0 +1,81 @@
+.blocks__activities-events {
+  display: block;
+}
+.blocks__activities-events h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 80px;
+  color: #1178B2;
+  margin-bottom: 30px;
+}
+
+.block-activ-changes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.block__activities-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  justify-content: flex-start;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  min-height: 171px;
+  max-width: 324px;
+}
+.block__activities-card time {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.img__title-activities {
+  display: flex;
+  width: 171px;
+  height: 86px;
+  transform: rotate(270deg);
+  position: absolute;
+  top: 43px;
+  left: -52px;
+}
+.img__title-activities img {
+  display: flex;
+  width: 171px;
+  height: 86px;
+  margin-bottom: auto;
+}
+
+.title__activities {
+  padding: 20px 20px 20px 84px;
+}
+.title__activities h4 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.title__activities p {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .block__activities-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 228px;
+  }
+  .img__title-activities {
+    transform: rotate(360deg);
+  }
+}

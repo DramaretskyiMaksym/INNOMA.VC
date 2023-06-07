@@ -28,7 +28,7 @@
     &::before{
       position: absolute;
       content: "";
-      background-image: url("../../images/Vector-arrow.svg");
+      background-image: url("../images/Vector-arrow.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -108,7 +108,7 @@
       &::after{
         position: absolute;
         content: "";
-        background-image: url("../../images/Vector-arrow.svg");
+        background-image: url("../images/Vector-arrow.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -164,10 +164,22 @@
   }
 
   .module__block-span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3,p{
+      font-size: 16px;
+      line-height: 20px;
+    }
     &:nth-child(-n+7){
       span {
+        margin-left: 50px;
+        justify-content: start;
+        align-items: center;
+        gap: 12px;
+        flex-direction: row;
         &::after{
-          top: 18px;
+          top: 0px;
           left: 94%;
         }
       }
