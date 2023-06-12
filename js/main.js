@@ -5,3 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 })
 
+
+const form = document.querySelector('.form');
+const openButton = document.querySelector('#open-form')
+const closeButton = document.querySelector('#close-form')
+
+openButton.addEventListener('click', () => {
+  form.classList.add('form__showed')
+});
+
+closeButton.addEventListener('click', () => {
+  form.classList.remove('form__showed')
+});

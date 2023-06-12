@@ -278,3 +278,11 @@ block we
         .we__description
           span INNOMA.VC
           p - International analytical agency for the launch of IT business in the local markets of Asia, the Middle East, Latin America, Africa. Our team consists of professionals in their field and our main goal is to help IT companies obtain the necessary knowledge and documents to successfully launch their product on international markets.
+block form
+    form(class="form" action="https://fom.in.ua/echo" target="_blank" method="post" autocomplete="on")
+      fieldset(class="user-name")
+        legend Login
+        input(class="name" type="text" name="user-name" placeholder="Name" required)
+        input(type="email" name="Email" placeholder="Email@gmail.com" required)
+      button(class="send__form" type="submit") Sign in
+      button(class="close__form-form" type="button" id="close-form")
